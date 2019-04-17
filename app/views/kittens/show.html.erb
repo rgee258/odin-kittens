@@ -1,0 +1,13 @@
+<h1><%= @kitten.name %></h1>
+<h3>Age</h3>
+<p><%= @kitten.age %></p>
+<h3>Cuteness</h3>
+<p><%= @kitten.cuteness %></p>
+<h3>Softness</h3>
+<p><%= @kitten.softness %></p>
+<div class="kittens-options">
+  <p><%= link_to "Home", kittens_url %></p>
+  <p><%= link_to "Edit", edit_kitten_url(params[:id]) %></p>
+  <p><%= link_to "Delete", kitten_path(@kitten.id), method: :delete,
+      data: { confirm: "Are you sure you want to remove this kitty?" } %></p>
+</div>
