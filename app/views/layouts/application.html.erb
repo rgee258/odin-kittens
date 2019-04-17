@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OdinKittens</title>
+    <title>Odin Kittens</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <% flash.each do |type, message| %>
+      <div class="flash-<%= type %>"><%= message %></div>
+    <% end %>
     <%= yield %>
   </body>
 </html>

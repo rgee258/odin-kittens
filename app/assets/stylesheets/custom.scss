@@ -1,0 +1,21 @@
+* {
+  text-align: center;
+}
+
+.kittens-info p, .kittens-options p {
+  display: inline;
+}
+
+.flash-error {
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 40%;
+  background-color: LightCoral;
+}
+
+.flash-success {
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 40%;
+  background-color: LightGreen;
+}
